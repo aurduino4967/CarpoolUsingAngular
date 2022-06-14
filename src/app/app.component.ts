@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'carpool-app';
+  logoimg_src="../assets/logo.png";
+  signupimg_src="../assets/Signup_img.png";
+  
 }

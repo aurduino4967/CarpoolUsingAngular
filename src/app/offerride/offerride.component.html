@@ -1,0 +1,37 @@
+<div id="offerRide">
+    <img class="icon" src={{logoimg_src}}/>
+    <div class="offerRideForm">
+            <div class="header">
+                <p class="heading">Offer a Ride</p>
+                <p class="tagline">we get you the matches asap !</p>
+            </div>
+            <div class="toggleswitch">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="inputs">
+                <label>From</label><br>     
+                <input #offerfrom type="text"/><br>
+                <label>To</label><br>
+                <input #offerto type="text"/><br>
+                <label>Date</label><br>
+                <input #offerdate type="date" placeholder="xx/mm/yyyy"/><br>
+                <div class="mapStyling">
+                    <i class="fas fa-circle" id="circleIcon"></i><br>
+                    <div *ngFor="let item of [1,2,3]"><span  class="dot"></span><br></div>
+                    <i class='fas fa-map-marker-alt' id="locationIcon"></i>
+                </div>
+                <div class="timings">
+                    <button class="time" id=offered{{timeslot}} *ngFor="let timeslot of timeslots" (click)="timing(timeslot)">{{timeslot}}</button>
+                </div>
+                <div class="seats-section">
+                    <button class="seats" *ngFor="let seat of seats" id={{seat}} (click)="seatBooking(seat)" value={{seat}}>{{seat}}</button>
+                    <label class="tag">Price</label>
+                    <p class="price">180$</p>
+                </div> 
+                <button class="submit" (click)="offerRide(offerfrom,offerto,offerdate)">Submit</button>
+            </div>
+    </div>
+</div>

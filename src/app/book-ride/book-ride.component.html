@@ -1,0 +1,32 @@
+<div id="bookRide">
+        <img class="icon" src={{logoimg_src}}/>
+        <div class="bookRideForm">
+            <div class="header">
+                <p class="heading">Book a Ride</p>
+                <p class="tagline">we get you the matches asap !</p>
+            </div>
+            <div class="toggleswitch">
+                <label class="switch">
+            "     <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="inputs">
+                <label>From</label><br>     
+                <input #from type="text"/><br>
+                <label >To</label><br>
+                <input #to type="text"/><br>
+                <label>Date</label><br>
+                <input #date type="date" placeholder="xx/mm/yyyy"/><br>
+                <div class="mapStyling">
+                    <i class="fas fa-circle" id="circleIcon"></i><br>
+                    <div *ngFor="let item of [1,2,3]"><span  class="dot"></span><br></div>
+                    <i class='fas fa-map-marker-alt' id="locationIcon"></i>
+                </div>
+            <div class="timings" *ngFor="let timeslot of timeslots">
+                <button class="time" value={{timeslot}} id={{timeslot}}  (click)="timing(timeslot)">{{timeslot}}</button>
+            </div>
+            <button class="submit" (click)="bookTheRide(date,from,to)">submit</button>
+        </div>
+    </div>
+</div>

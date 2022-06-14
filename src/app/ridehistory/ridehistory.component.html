@@ -1,0 +1,60 @@
+<div id="history">
+    <div id="bookedRideTemplates">
+        <p id="headerBookedRide">BookedRides</p>
+        <div class="rideTemplate" *ngFor="let ride of bookedrides">
+            <div class="left">
+                <label>From</label><br>     
+                <p>{{ride.from}}</p>
+                <label>Date</label><br>
+                <p>{{ride.date}}</p>
+            </div>
+            <div class="mapStyling">
+                <i class="fas fa-circle" id="circleIcon"></i>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <i class='fas fa-map-marker-alt' id="locationIcon"></i>
+            </div>
+            <div class="right">
+                <label>To</label><br>     
+                <p>{{ride.to}}</p>
+                <label>Time</label><br>
+                <p>{{ride.time}}</p>
+            </div>
+        </div>
+    </div>
+    <div id="offeredRideTemplates">
+        <p id="headerOfferedRide">Offered Rides</p>
+        <div class="rideTemplate" *ngFor="let ride of offeredrides">
+            <div class="left">
+                <label>From</label><br>     
+                <p>{{ride.from}}</p>
+                <label>Date</label><br>
+                <p>{{ride.date}}</p>
+                <label>Price</label><br>
+                <p>{{ride.price}}</p>
+            </div>
+            <div class="mapStyling">
+                <i class="fas fa-circle" id="circleIcon"></i>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <i class='fas fa-map-marker-alt' id="locationIcon"></i>
+            </div>
+            <div class="right">
+                <label>To</label><br>     
+                <p>{{ride.to}}</p>
+                <label>Time</label><br>
+                <p>{{ride.time}}</p>
+                <label>Seats</label><br>
+                <p>{{ride.seats}}</p>
+            </div>
+        </div>
+    </div>
+</div>

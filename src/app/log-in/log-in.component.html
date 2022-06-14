@@ -1,0 +1,9 @@
+<div id="logIn">
+    <p class="header"><b>Log In</b></p>
+    <form id="logInFrom" ngForm #loginform>
+        <input name="emailid"  type="email" class="inputBoxes" #emailid placeholder="Enter Email Id">
+        <input type="password"  placeholder="*******" ngModel name="password" #password class="inputBoxes"><i (click)="togglePasswordVisibility(togglePassword,password)" class="bi bi-eye-slash" id="togglePassword" #togglePassword></i><br>
+    </form>
+    <button class="submit-btn" (click)="logIn(emailid,password,loginform)">submit</button>
+    <p>Not a member?<a href="#signUp" (click)="viewSignUpForm()">Signup</a></p>
+</div>

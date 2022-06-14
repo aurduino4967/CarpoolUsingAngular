@@ -1,0 +1,9 @@
+<div  id="signUp">
+    <form id="signUpFrom" #signinform>
+        <input  type="email" class="inputBoxes" #emailid placeholder="Enter Email Id">
+        <input type="password"  placeholder="*******" name="password"  id="password" #password class="inputBoxes"/> <i (click)="togglePasswordVisibility(togglePassword,password)" class="bi bi-eye-slash" id="togglePassword" #togglePassword></i><br>
+        <input type="password"  placeholder="confirm password" name="password"  #confirmation class="inputBoxes"><br>
+    </form>
+    <button class="submit-btn" (click)="(registerNewUser(emailid,password,confirmation,signinform))">submit</button>
+    <p>already a member?<a href="#logIn" (click)="viewLogInForm()">login</a></p>
+</div>

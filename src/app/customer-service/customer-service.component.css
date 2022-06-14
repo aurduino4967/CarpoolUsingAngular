@@ -1,0 +1,47 @@
+
+.buttons-section{
+    align-content: center;
+    align-items: center;
+    margin: 150px;
+    margin-left: -1100px;
+}
+
+#services{
+    width: 100%; 
+    float:left; 
+    height:750px;
+    margin-top: 5px;
+    background-image: url("../../assets/service.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.buttons
+{   align-content: center;
+    padding: 80px;
+    margin: 20px;
+    background-color: orange;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.icon
+{
+   padding:10px;
+   padding-left: 40px;
+   width:100%;
+   vertical-align: top;
+}
+
+h2{
+    font-family: sans-serif;
+    margin-left: 480px;
+}
+
+#bookride{
+    background-color: blueviolet;
+}
+
